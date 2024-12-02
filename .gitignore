@@ -162,4 +162,7 @@ cython_debug/
 # VS Code
 .vscode/
 
-report/
+output/latest
+output/allure-results
+data/config/dev_paths.json
+/output/logs/

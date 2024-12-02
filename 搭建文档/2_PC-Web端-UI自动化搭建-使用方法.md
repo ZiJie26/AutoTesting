@@ -9,7 +9,9 @@
     - [使用Selenium IDE录制脚本](#使用selenium-ide录制脚本)
     - [运行用例集](#运行用例集)
     - [主运行文件](#主运行文件)
-  - [集成到Jenkins](#集成到jenkins)
+  - [拉取代码！！！很重要，每次修改代码之前都要拉取一下](#拉取代码很重要每次修改代码之前都要拉取一下)
+  - [提交代码](#提交代码)
+  - [测试人员后面的可以不用看](#测试人员后面的可以不用看)
     - [配置Jenkins](#配置jenkins)
     - [创建job](#创建job)
 
@@ -35,11 +37,11 @@
 
 ![20240904093821](https://raw.githubusercontent.com/ZiJie26/picgo-win/main/2_PC-Web端-UI自动化搭建-使用方法/20240904093821.png)
 
-这里先拉取我的代码，后续可以替换成自己的代码仓库
+这里先拉取代码仓库
 
-`https://github.com/ZiJie26/UI_AutoTesting.git`
+`https://devops.szpuree.com/aidmed/%E4%BA%92%E8%81%94%E7%BD%91%E5%8C%BB%E9%99%A2/_git/auto-test`
 
-![20240904094029](https://raw.githubusercontent.com/ZiJie26/picgo-win/main/2_PC-Web端-UI自动化搭建-使用方法/20240904094029.png)
+![alt text](2_PC-Web端-UI自动化搭建-使用方法/image.png)
 
 注意这里要选中你刚刚创建的环境：
 
@@ -207,9 +209,31 @@
 
 一般直接运行该文件`python main_run.py`就可以运行这里面的所有套件，当然也可以选择其中几个套件运行，比如说我新添加了suit3，但只想执行suit1和suit2，就执行`python main_run.py test1 test2`，和前面pytest的方法的区别是，这个只需要一次命令可以执行多个套件。
 
-## 集成到Jenkins
+## 拉取代码！！！很重要，每次修改代码之前都要拉取一下
 
->这里使用Jenkins作为持续集成工具，可以在代码构建完之后执行我们的自动化测试，不过目前仅是演示使用方法，用的是我本地的电脑，并非服务器
+第一次从仓库拉下代码的时候要创建一个新分支（**创建分支只要做一次！只要确保你的分支不是master就行**）
+
+![alt text](2_PC-Web端-UI自动化搭建-使用方法/image-2.png)
+
+![alt text](2_PC-Web端-UI自动化搭建-使用方法/image-3.png)
+
+**之后每次对代码进行修改之前都要确认左上角切换到对应分支，再从master分支拉取最新代码，然后才可以开始修改代码。**
+
+![alt text](2_PC-Web端-UI自动化搭建-使用方法/image-4.png)
+
+![alt text](2_PC-Web端-UI自动化搭建-使用方法/image-5.png)
+
+## 提交代码
+
+当你编写完新的用例脚本的时候，可以在Pycharm里推送代码
+
+修改完后可以按照下图提交代码，提交完之后需要告诉仓库管理人将代码合到master分支才能在服务器上运行
+
+![alt text](2_PC-Web端-UI自动化搭建-使用方法/image-1.png)
+
+## 测试人员后面的可以不用看
+
+>这里使用Jenkins作为持续集成工具，可以在代码构建完之后执行我们的自动化测试，这里用作笔记给楚梓杰之后部署查看，
 
 ### 配置Jenkins
 

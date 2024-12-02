@@ -1,0 +1,23 @@
+{
+  "chrome_testing_path": "C:\\chrome-win64\\chrome.exe",
+  "chromedriver_path": "C:\\chrome-win64\\chromedriver.exe",
+  "chrome_user_data_dir": "C:\\Users\\Administrator\\AppData\\Local\\Google\\Chrome for Testing\\User Data",
+  "test_doc_port": "XXXXX",
+  "test_med_port": "XXXXX",
+  "appPackage": "uni.XXXXX",
+  "appActivity": "io.dcloud.XXXXX",
+  "admin_url": "https://show.XXXXX.net/stage-api",
+  "op_url": "https://op-test.XXXXX.net/stage-api",
+  "common_headers_admin": {
+    "Authorization": "Bearer 32d85770-7054-XXXXX-bf83-631742bc3f85"
+  },
+  "common_headers_doctor_client": {
+    "Authorization": "Bearer XXXXX"
+  },
+  "common_headers_op": {
+    "Authorization": "Bearer 214f5096-XXXXX-4e71-af56-318f1ceadc99"
+  },
+  "common_headers_patient": {
+    "Authorization": "Bearer XXXXX"
+  }
+}

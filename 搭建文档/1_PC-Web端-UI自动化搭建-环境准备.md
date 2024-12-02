@@ -10,8 +10,6 @@
     - [Chrome for Testing \& ChromeDriver](#chrome-for-testing--chromedriver)
     - [Selenium IDE](#selenium-ide)
     - [allure](#allure)
-    - [Jenkins](#jenkins)
-      - [Jenkins Allure插件](#jenkins-allure插件)
 
 ## 脚本编写环境准备
 
@@ -109,55 +107,3 @@ Pycharm社区版
 确定完可以去cmd确认一下是否添加成功：
 
 ![20240828175224](https://raw.githubusercontent.com/ZiJie26/picgo-win/main/1_PC-Web端-UI自动化搭建-环境准备/20240828175224.png)
-
-### Jenkins
-
->CI/CD持续集成发布工具
-
-到这里（<https://www.jenkins.io/download/>）下载
-
-![20240828180558](https://raw.githubusercontent.com/ZiJie26/picgo-win/main/1_PC-Web端-UI自动化搭建-环境准备/20240828180558.png)
-
-下载完之后安装，这个地方选第一个：
-
-![20240828182658](https://raw.githubusercontent.com/ZiJie26/picgo-win/main/1_PC-Web端-UI自动化搭建-环境准备/20240828182658.png)
-
-这里要选择你的Java目录，要JDK11、17或者21（所以要先安装JDK再安装Jenkins）：
-
-![20240828184044](https://raw.githubusercontent.com/ZiJie26/picgo-win/main/1_PC-Web端-UI自动化搭建-环境准备/20240828184044.png)
-
-然后一路next就行
-
-安装完会自动启动，也可以在计算机管理的服务这里启动与关闭：
-
-![20240828184729](https://raw.githubusercontent.com/ZiJie26/picgo-win/main/1_PC-Web端-UI自动化搭建-环境准备/20240828184729.png)
-
-安装完后打开：<localhost:8080> 然后按照页面中给出的地址找到文件，复制里面的密码。
-
-![20240904085832](https://raw.githubusercontent.com/ZiJie26/picgo-win/main/1_PC-Web端-UI自动化搭建-环境准备/20240904085832.png)
-
-![20240904085925](https://raw.githubusercontent.com/ZiJie26/picgo-win/main/1_PC-Web端-UI自动化搭建-环境准备/20240904085925.png)
-
-粘贴过去，点击继续。
-
-![20240904090119](https://raw.githubusercontent.com/ZiJie26/picgo-win/main/1_PC-Web端-UI自动化搭建-环境准备/20240904090119.png)
-
-点击左边这个：**安装推荐的插件**
-
-然后这个填自己记得住的就行：
-
-![20240904091410](https://raw.githubusercontent.com/ZiJie26/picgo-win/main/1_PC-Web端-UI自动化搭建-环境准备/20240904091410.png)
-
-后面的**实例配置**点击保存并完成就行。
-
-然后点击开始使用进入主界面。
-
-#### Jenkins Allure插件
-
-按照下图依次点击：
-
-![20240904091810](https://raw.githubusercontent.com/ZiJie26/picgo-win/main/1_PC-Web端-UI自动化搭建-环境准备/20240904091810.png)
-
-![20240904091945](https://raw.githubusercontent.com/ZiJie26/picgo-win/main/1_PC-Web端-UI自动化搭建-环境准备/20240904091945.png)
-
-![20240904092032](https://raw.githubusercontent.com/ZiJie26/picgo-win/main/1_PC-Web端-UI自动化搭建-环境准备/20240904092032.png)
